@@ -8,7 +8,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name="products")
-public class product {
+public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,9 +18,9 @@ public class product {
     private String description;
     private int price;
     
-    public product() {
+    public Product() {
     }
-    public product(Long id, String name, String description, int price) {
+    public Product(Long id, String name, String description, int price) {
         this.id = id;
         this.name = name;
         this.description = description;
